@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find floribot_simulation)/launch/FloriBot.launch" />
+    <include file="$(find scan_tools)/launch/scan2cart.launch" />
+    <include file="$(find scan_tools)/launch/cart_merger.launch" />
+    <include file="$(find dist_ang)/launch/pair_angle_with_hist_comparison.launch" />
+    <include file="$(find maize_navigation)/launch/maize_navigation.launch" />
+</launch>
+

@@ -29,7 +29,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -150,6 +150,8 @@ Visualization Manager:
       Visual Enabled: true
     - Class: rviz/TF
       Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
         All Enabled: true
@@ -159,31 +161,9 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        frontLeft:
-          Value: true
-        frontRight:
-          Value: true
-        front_laser:
-          Value: true
-        front_laser_mount_link:
-          Value: true
-        front_wagon:
-          Value: true
         jointFront:
           Value: true
         jointRear:
-          Value: true
-        laser_front_box:
-          Value: true
-        rearLeft:
-          Value: true
-        rearRight:
-          Value: true
-        rear_laser:
-          Value: true
-        rear_laser_mount_link:
-          Value: true
-        rear_wagon:
           Value: true
       Marker Alpha: 1
       Marker Scale: 0.5
@@ -194,28 +174,10 @@ Visualization Manager:
       Tree:
         base_link:
           axesFront:
-            frontLeft:
-              {}
-            frontRight:
-              {}
-            front_laser_mount_link:
-              front_laser:
-                {}
             jointFront:
-              jointRear:
-                axesRear:
-                  rearLeft:
-                    {}
-                  rearRight:
-                    {}
-                  rear_laser_mount_link:
-                    rear_laser:
-                      {}
-                  rear_wagon:
-                    {}
-            laser_front_box:
               {}
-          front_wagon:
+        jointRear:
+          axesRear:
             {}
       Update Interval: 0
       Value: true
@@ -252,7 +214,7 @@ Visualization Manager:
       Marker Topic: /bounding_boxes
       Name: Marker
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -432,4 +394,4 @@ Window Geometry:
     collapsed: false
   Width: 1394
   X: 195
-  Y: 92
+  Y: 55
